@@ -1,0 +1,97 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+	outline: none;
+}
+body{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.row{
+	background: #fff;
+}
+ 
+ 
+#top_nav{
+	height: 40px;
+}
+#top_nav>a{
+	text-align: left;
+	margin-right: 0;
+	position: relative;
+	color: #333;
+
+	text-decoration: none;
+}
+#top_nav>a>img{
+	margin-top: 2px;
+}
+#top_nav>form{
+	position: absolute;
+	left: 9%;
+
+}
+ 
+#InputSearch{
+	background: url(../images/search.png) no-repeat right center;
+}
+ 
+
+.sub_pgrma{
+	text-align: center;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+
+.items{
+	margin-top: 4px;
+	text-align: left;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 4px;
+}
+
+.h_100{
+	height: 100px;
+	padding: 0;
+	/*background: red;*/
+}
+.pro_pic{
+	border: 1px solid #ccc;
+	margin-top: 4px;
+}
+.pro_tt{
+	height: 30px;
+	line-height: 2.0;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pro_info{
+	height: 64px;
+}
+.pro_info{
+	position: relative;
+}
+.pro_price{
+	color: red; 
+	position: absolute;
+	left: 2px;
+}
+.to_cart{
+	background: transparent;
+	border: 0;
+	position: absolute;
+	right: 30px;
+	top: -4px;
+}
+
+/*多个文字的排列样式重写*/
+ #bottom_nav a{
+	padding:0;text-align:center;color:#000;text-decoration:none;
+ }
+ #bottom_nav a:hover{
+ 	color: red;
+ }
