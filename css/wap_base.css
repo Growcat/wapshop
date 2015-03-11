@@ -22,11 +22,13 @@ body{
 	text-decoration: none;
 }
 #top_nav>form>div{
- padding-left:0;margin-top:4px; 
+ padding-left:0;
+ margin-top:4px; 
 
 } 
  
 #InputSearch{
+	padding-right: 26px;
 	background: url(../images/search.png) no-repeat right center;
 }
  
