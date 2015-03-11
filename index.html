@@ -18,22 +18,28 @@
 <!-- 顶部栏/ 分类&搜索 -->
 	<div class="row">
 
-	<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
-		<a href="#" class="col-xs-2" style="padding:0;text-align:center;"><img  src="images/fenlei.png" alt="" height="24"><br>分类</a>
+	<nav id="top_nav" class="navbar navbar-default  navbar-fixed-top" role="navigation">
+		<a href="#" class="col-xs-2"><img  src="images/fenlei.png" alt="" height="24"><br>分类</a>
 		 <form  role="form" class="form-group" >
 				<label class="sr-only" for="InputSearch">search</label>
-				<div class="col-xs-10" style="padding-left:0;margin-top:4px;">
+				<div class="col-xs-8" >
 					<input type="text" class="form-control" id="InputSearch" placeholder="输入搜索关键字">
 				</div>
+				<div class="col-xs-2">
+					<button type="submit" class="btn btn-primary ">搜索</button>
+				</div>
 			</form>
-
 	</nav>
+
 </div>
 
 <!-- 栏目入口 -->
 	<div class="row">
-		<div class="col-xs-12 sub_pgrma"><a href="#"><img class="img-responsive" src="images/lanmutest.jpg" alt=""></a></div>
-		<div class="col-xs-12 sub_pgrma"><a href="#"><img class="img-responsive" src="images/lanmutest2.jpg" alt=""></a></div>
+		<div class="sub_pgrma"><a href="#"><img class="col-xs-12 img-responsive" src="images/lanmutest.jpg" alt=""></a></div>
+	</div>
+
+	<div class="row">
+		<div class="sub_pgrma"><a href="#"><img class="col-xs-12 img-responsive" src="images/lanmutest2.jpg" alt=""></a></div>
 	</div>
 		
 <!-- 产品列表 -->
