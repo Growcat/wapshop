@@ -119,11 +119,16 @@ i{
 .text-center{
 	text-align: center;
 }
+.text-left{
+	text-align: left;
+}
 .aprice{
 	color: red;
+	font-size: 24px;
 }
 .x_price{
 	color: #666;
+	padding-left: 0;
 }
 
 
