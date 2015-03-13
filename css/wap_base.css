@@ -4,8 +4,8 @@
 	outline: none;
 }
 body{
-	padding-top: 50px;
 	padding-bottom: 50px;
+	background: #eee;
 }
 .row{
 	background: #fff;
@@ -91,3 +91,43 @@ body{
  #bottom_nav a:hover{
  	color: red;
  }
+
+/*******************************商品详情页面****************************************/
+#goodsinfos .row{
+	border-top: 1px solid #eee;
+	line-height: 2.0;
+}
+i{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+.star_ico{
+	background: url(../images/star.png) center no-repeat;
+}
+.star_empty{
+	background: url(../images/star_empty.png) center no-repeat;
+}
+.star_half{
+	background: url(../images/star_half.png) center no-repeat;
+}
+.sell_ico{
+	background: url(../images/sell_ico.png) center no-repeat;
+}
+
+.text-center{
+	text-align: center;
+}
+.aprice{
+	color: red;
+}
+.x_price{
+	color: #666;
+}
+
+
+.tjpros{
+	color:#000;text-decorarion:none;
+}
+
