@@ -115,6 +115,10 @@ i{
 .sell_ico{
 	background: url(../images/sell_ico.png) center no-repeat;
 }
+.go_next{
+	background: url(../images/go_next.png) center no-repeat;
+
+}
 
 .text-center{
 	text-align: center;
