@@ -103,28 +103,62 @@ i{
 	height: 24px;
 	vertical-align: middle;
 }
-.star_ico{
+i.star_ico{
 	background: url(../images/star.png) center no-repeat;
 }
-.star_empty{
+i.star_empty{
 	background: url(../images/star_empty.png) center no-repeat;
 }
-.star_half{
+i.star_half{
 	background: url(../images/star_half.png) center no-repeat;
 }
-.sell_ico{
+i.sell_ico{
 	background: url(../images/sell_ico.png) center no-repeat;
 }
-.go_next{
+i.go_next{
 	background: url(../images/go_next.png) center no-repeat;
 
 }
+.level{
+	height: 40px;
+	background: url(../images/level.png) right no-repeat;
+}
 
+.ex_core{
+	height: 40px;
+	background: url(../images/ex_core.png) right no-repeat;
+}
+i.my_order{
+	background: url(../images/my_order.png) center no-repeat;
+
+}
+i.my_share{
+	background: url(../images/my_share.png) center no-repeat;
+}
+i.my_reco{
+	background: url(../images/my_reco.png) center no-repeat;
+	
+}
+i.goods_back{
+	background: url(../images/goods_back.png) center no-repeat;
+
+}
+i.back_recode{
+	background: url(../images/back_recode.png) center no-repeat;
+
+}
+i.kefufuwu{
+	background: url(../images/kefufuwu.png) center no-repeat;
+
+}
 .text-center{
 	text-align: center;
 }
 .text-left{
 	text-align: left;
+}
+.text-right{
+	text-align: right;
 }
 .aprice{
 	color: red;
@@ -133,10 +167,22 @@ i{
 .x_price{
 	color: #666;
 	padding-left: 0;
+
 }
 
 
 .tjpros{
 	color:#000;text-decorarion:none;
+}
+
+
+/*****************************************会员中心******************************************/
+.itemslist{
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #eee;
+}
+.itemslist a{
+	color: #333;
 }
 
