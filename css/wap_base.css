@@ -102,7 +102,6 @@ i{
 	width: 24px;
 	height: 24px;
 	vertical-align: middle;
-	background-size: 100% 100%;
 }
 i.star_ico{
 	background: url(../images/star.png) center no-repeat;
@@ -185,7 +184,7 @@ i.kefufuwu{
 	width: 68px;
 }
 .itemslist{
-	height: 40px;
+	/*height: 40px;*/
 	line-height: 40px;
 	border-top: 1px solid #eee;
 }
@@ -193,5 +192,16 @@ i.kefufuwu{
 	color: #333;
 }
 
+.col-allx-8{
+	width:70%;float:left;padding-left:15px;
+}
+
+.col-allx-3{
+	width:20%;float:left;;
+}
+
+.col-allx-1{
+	width:8%;float:right;margin-right: 2%;
+}
 
 
