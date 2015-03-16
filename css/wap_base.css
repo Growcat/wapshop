@@ -11,7 +11,7 @@ body{
 	background: #fff;
 }
  
- 
+
 #top_nav{
 	height: 40px;
 }
@@ -102,6 +102,7 @@ i{
 	width: 24px;
 	height: 24px;
 	vertical-align: middle;
+	background-size: 100% 100%;
 }
 i.star_ico{
 	background: url(../images/star.png) center no-repeat;
@@ -191,4 +192,6 @@ i.kefufuwu{
 .itemslist a{
 	color: #333;
 }
+
+
 
