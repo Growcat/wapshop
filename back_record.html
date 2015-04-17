@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 网页的宽度自动适应手机屏幕的宽度  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/wap_base.css">
+	<script src="js/jquery.js"></script>
+ 	<script src="js/bootstrap.min.js"></script>
+	<title>退换记录</title>
+</head>
+<body>
+	<div class="container">
+		 <table class="table margin-0" id="turn_r1">
+		 	<tr><td colspan="2">退换编号: <span class="text-primary">80688507</span></td></tr>
+		 	<tr><td class="col-xs-4">售后类型:</td><td class="col-xs-8">返修</td></tr>
+		 	<tr><td class="col-xs-4">商品数量:</td><td class="col-xs-8">10</td></tr>
+		 	<tr><td class="col-xs-4">申请时间:</td><td class="col-xs-8">2015-4-15 10:45:40</td></tr>
+		 	<tr><td class="col-xs-4">处理状态:</td><td class="col-xs-8"><span class="text-success">退换完成</span></td></tr>
+		 	<tr><td class="col-xs-4">处理信息:</td><td class="col-xs-8">你寄回的产品已经收到并维修好，现在已经给你快递出去，快递单号是 cs1123466789，请留意。</td></tr>
+		 </table>
+		
+
+		<div id="turn_infos">
+		<p>
+		 <div class="row">
+		 	<table class="table margin-0">
+		 		<tr><td class="h4 gutter">退/换进度</td></tr>
+		 		<tr><td>
+		 			<!-- 这里要根据不同的进度调不同的状态背景 -->
+					<div id="pro_step"></div>
+		 			<script>
+		 				
+		 				// 申请提交总共5种状态
+				 		// 0表示客户提交申请完成;
+						// 1表示为尔审核不通过;
+						// 2表示为尔审核通过;
+						// 3表示商品处理完成;
+						// 4表示全部完成;
+						// 传给wStep()的值为4， 0, 1, 2, 3;
+		 				
+		 				wStep(4);
+		 				
+		 				function wStep(stepx){
+							switch (stepx)
+							{
+							case 0:
+							  $("#pro_step").css('background-position', '0 0px');
+							  break;
+							case 1:
+							  $("#pro_step").css('background-position', '0 -55px');
+							  break;
+							case 2:
+							  $("#pro_step").css('background-position', '0 -110px');
+							  break;
+							case 3:
+							  $("#pro_step").css('background-position', '0 -165px');
+							  break;
+							case 4:
+							  $("#pro_step").css('background-position', '0 -220px');
+							  break;
+							}
+		 				}
+		 			</script>
+		 		</td>
+		 		</tr>
+		 	</table>
+		 </div></p>
+        <p>
+		 <div class="row">
+		 	<table class="table margin-0">
+		 		<tr><td class="h4 gutter" colspan="3">跟踪信息</td></tr>
+		 		<tr><td class="col-xs-3" style="padding-right:0;">处理时间</td><td class="text-center">处理信息</td><td class="col-xs-3 text-center" style="padding-right:0;">操作人</td></tr>
+		 		<tr><td class="col-xs-3" style="padding-right:0;">2015-4-15 10:56:57</td><td class="text-center">处理信息文字位置</td><td  class="col-xs-3 text-center" style="padding-right:0;">系统</td></tr>
+		 		<tr><td class="col-xs-3" style="padding-right:0;">2015-4-15 10:56:57</td><td class="text-center">处理信息处理信息处理信息处理信息处理信息处理信息处理信息处理信息</td><td  class="col-xs-3 text-center" style="padding-right:0;">售后客服</td></tr>
+		 	</table>
+		 </div></p>
+		 </div>
+	</div>
+
+</body>
+</html>
