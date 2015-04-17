@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 网页的宽度自动适应手机屏幕的宽度  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/wap_base.css">
+	<title>申请退换货</title>
+</head>
+<body>
+<div class="container">
+ 
+<form action="#" id="back_t">
+	<p>
+		<div class="row">
+			<table class="table margin-0">
+				<tr><td colspan="2" class="h4 gutter">商品明细 </td></tr>
+				<tr><td class="col-xs-8">商品名称</td><td class="col-xs-4 text-center">商品数量</td></tr>
+				<tr><td class="col-xs-8">依漫婷花果葡萄套装</td><td class="col-xs-4 text-center">100</td></tr>
+			</table>
+		</div>
+	</p>
+
+	<p>
+	<div class="row">
+		<table class="table margin-0">
+			<tr><td colspan="3" class="h4 gutter"> 退/换类型: </td></tr>
+			<tr><td><input id="hk_01" type="radio" name="how_back"><label for="hk_01">退货</label></td>
+			<td><input id="hk_02" type="radio" name="how_back"><label for="hk_02">换货</label></td>
+			<td><input id="hk_03" type="radio" name="how_back"><label for="hk_03">返修</label></td>
+			</tr>
+		</table>
+	</div>
+	</p>
+	<p>
+	<div class="row">
+		<table class="table margin-0">
+			<tr><td class="h4" style="padding-right:0;">退/换数量: </td> <td><input type="number" class="form-control"></td></tr>
+		</table>
+	</div>
+	</p>
+	<p>
+	<div class="row">
+		<table class="table margin-0">
+			<tr><td class="h4 gutter">退/换描述:</td></tr>
+			<tr><td><textarea name="why_back" id="wb" cols="30" rows="4" class="form-control" placeholder="请描述商品出现的问题"></textarea></td></tr>
+		</table>
+	</div>
+	</p>
+	<br>
+	<button class="col-xs-12 btn btn-danger" type="submit">申请退换</button>
+</form>
+</div>
+ 
+ <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script  src="js/radioChange.js"> </script>
+
+	
+</body>
+</html>
