@@ -9,103 +9,46 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/wap_base.css">
-	<link rel="stylesheet" type="text/css" href="css/swipe.css">
-	<title>为尔购物首页</title>
+	<title>商品列表</title>
 </head>
 <body>
-
-<div class="container">
-		 
-
-<!-- 顶部栏/ 分类&搜索 -->
-<div class="row">
-
-	<nav id="top_nav" class="navbar navbar-default  navbar-fixed-top" role="navigation">
-		<a href="#" class="col-xs-2"><img  src="images/fenlei.png" alt="" height="24"><br>分类</a>
-
-		 <form  role="form" class="form-group" action="index.html" >
-				<label class="sr-only" for="InputSearch">search</label>
-				<div class="col-xs-8">
-					<input type="text" class="form-control" id="InputSearch" placeholder="输入搜索关键字">
+	<div class="container" style="position: relative;">
+		<div class="row">
+				<div class="drop">
+					<div class="col-xs-4 text-center dropdown">
+						<a href="#"  >综合排序<span class="caret"></span></a>
+					</div>	
+					<div class="col-xs-4 text-center dropdown">
+						<a href="#"  >最新上架<span class="caret"></span></a>
+					</div>	
+					<div class="col-xs-4 text-center dropdown">
+						<a href="#"  >筛选<span class="caret"></span></a>
+					</div>	
 				</div>
-				<div class="col-xs-2">
-					<button   type="submit" class="btn btn-primary ">搜索</button>
+				<div class="droplist">
+					<!-- 综合排序子列表 -->
+						<ul class="dropitem">
+							<li><a href="#">综合排序下拉菜单1</a></li>
+							<li><a href="#">综合排序下拉菜单2</a></li>
+							<li><a href="#">综合排序下拉菜单3</a></li>
+						</ul>		
+					<!-- 最新上架子列表 -->
+				 		<ul class="dropitem">
+							<li><a href="#">最新上架下拉菜单1</a></li>
+							<li><a href="#">最新上架下拉菜单2</a></li>
+							<li><a href="#">最新上架下拉菜单3</a></li>
+						</ul>
+					<!-- 筛选子列表 -->
+				 		<ul class="dropitem">
+							<li><a href="#">筛选下拉菜单1</a></li>
+							<li><a href="#">筛选下拉菜单2</a></li>
+							<li><a href="#">筛选下拉菜单3</a></li>
+						</ul>
 				</div>
-			</form>
-
-	</nav>
-
-</div>
-
-</div>
-
-<div style="height:50px"></div>
-
-<!-- 轮播3张-->
-	 <div class="addWrap">
-	 	<div class="swipe" id="mySwipe">
-	 		<div class="swipe-wrap">
-	 			<div>
-	 				<a href="javascript:;">
-	 					<img class="img-responsive" src="images/1.jpg"/>	 
-	 				</a>
-	 			</div>
-	 			<div>
-	 				<a href="javascript:;">
-	 					<img class="img-responsive" src="images/2.jpg"/>	 
-	 				</a>
-	 			</div>
-	 			<div>
-	 				<a href="javascript:;">
-	 					<img class="img-responsive" src="images/3.jpg"/>	 
-	 				</a>
-	 			</div>
-	 		</div>
 	 	</div>
-	 	<ul id="position">
-	 		<li class="cur"></li>
-	 		<li class=""></li>
-	 		<li class=""></li>
-	 	</ul>
-	 </div>
-	 <!-- 设置图片的滚动 -->
-	 <script src="js/swipe.js"></script>
-	 <script type="text/javascript">
-	    var bullets = document.getElementById('position').getElementsByTagName('li');
-	    var banner = Swipe(document.getElementById('mySwipe'), {
-	    	auto: 2000,
-	    	continuous: true,
-	    	disableScroll:false,
-	    	callback: function(pos) {
-	    		var i = bullets.length;
-	    		while (i--) {
-	    		  bullets[i].className = ' ';
-	    		}
-	    		bullets[pos].className = 'cur';
-	    	}
-	    });
-	 </script>
-		
 
-<!-- 四小图标 -->
-<div class="container-fluid">
-	<div class="row"  >
-		<table class="table table-bordered text-center margin-0">
-		<tr><td colspan="4" style="background:url(images/t_bg.png) repeat-x center;background-size:12px;padding-bottom:0;"></td></tr>
-		<tr style="border-top:0;">
 
-			<td ><a href="#"><span class="icos1"></span><br>最新商品</a></td>
-			<td ><a href="#"><span class="icos2"></span><br>最新商品</a></td>
-			<td ><a href="#"><span class="icos3"></span><br>最新商品</a></td>
-			<td ><a href="#"><span class="icos4"></span><br>最新商品</a></td>
-			</tr>
-		</table>
-	</div>
-	 
-</div>
-
-<div class="container">
-	<!-- 产品列表 -->
+<!-- 产品列表 -->
 			<!-- sub_pros -->
 					<div class="items row">
 						<a  href="#"><div class="col-xs-5 text-center"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></div></a>
@@ -124,12 +67,13 @@
 								</div>
 								<!-- 加入购物车 -->
 								<div class="infos_num">
-									<button type="button" class="btn btn-success btn-sm">加入购物车</button>
+									<button class="btn btn-success btn-sm">加入购物车</button>
 								</div>
 							</div>
 						</div>
 					</div>
- 			<!-- sub_pros -->
+
+ 	 			<!-- sub_pros -->
 					<div class="items row">
 						<a  href="#"><div class="col-xs-5 text-center"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></div></a>
 						<div class="col-xs-7 h_100" >
@@ -147,19 +91,20 @@
 								</div>
 								<!-- 加入购物车 -->
 								<div class="infos_num">
-									<button type="button" class="btn btn-success btn-sm">加入购物车</button>
+									<button class="btn btn-success btn-sm">加入购物车</button>
 								</div>
 							</div>
 						</div>
 					</div>
- 			<!-- sub_pros -->
+
+ 	 			<!-- sub_pros -->
 					<div class="items row">
 						<a  href="#"><div class="col-xs-5 text-center"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></div></a>
 						<div class="col-xs-7 h_100" >
 							<div  class="c_tt pro_tt">依漫婷 清新芍药花沐浴露300ml标题多字测试标题多字测试标题多字测试标题多字测试</div>
 
 							<div class="c_infos">
-								<!-- 价格 -->
+								<!-- 小计 -->
 								<div class="infos_xj">
 									<span >￥88.00</span><br>
 								</div>
@@ -168,21 +113,22 @@
 									<span>积分:0.8</span><br>
 									<span>重量:0.8kg</span>
 								</div>
-								<!-- 加入购物车 -->
+								<!-- 修改数量 -->
 								<div class="infos_num">
-									<button type="button" class="btn btn-success btn-sm">加入购物车</button>
+									<button class="btn btn-success btn-sm">加入购物车</button>
 								</div>
 							</div>
 						</div>
 					</div>
- 			<!-- sub_pros -->
+
+ 	 			<!-- sub_pros -->
 					<div class="items row">
 						<a  href="#"><div class="col-xs-5 text-center"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></div></a>
 						<div class="col-xs-7 h_100" >
 							<div  class="c_tt pro_tt">依漫婷 清新芍药花沐浴露300ml标题多字测试标题多字测试标题多字测试标题多字测试</div>
 
 							<div class="c_infos">
-								<!-- 价格 -->
+								<!-- 小计 -->
 								<div class="infos_xj">
 									<span >￥88.00</span><br>
 								</div>
@@ -191,16 +137,44 @@
 									<span>积分:0.8</span><br>
 									<span>重量:0.8kg</span>
 								</div>
-								<!-- 加入购物车 -->
+								<!-- 修改数量 -->
 								<div class="infos_num">
-									<button type="button" class="btn btn-success btn-sm">加入购物车</button>
+									<button class="btn btn-success btn-sm">加入购物车</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
- <div style="height:50px;"></div>
-<!-- 底部导航 -->
+ 	 			<!-- sub_pros -->
+					<div class="items row">
+						<a  href="#"><div class="col-xs-5 text-center"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></div></a>
+						<div class="col-xs-7 h_100" >
+							<div  class="c_tt pro_tt">依漫婷 清新芍药花沐浴露300ml标题多字测试标题多字测试标题多字测试标题多字测试</div>
+
+							<div class="c_infos">
+								<!-- 小计 -->
+								<div class="infos_xj">
+									<span >￥88.00</span><br>
+								</div>
+								<!-- 信息 -->
+								<div class="infos_other">
+									<span>积分:0.8</span><br>
+									<span>重量:0.8kg</span>
+								</div>
+								<!-- 修改数量 -->
+								<div class="infos_num">
+									<button class="btn btn-success btn-sm">加入购物车</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+ 	 
+ 
+
+
+
+	<!-- 底部导航 -->
 	<!-- 导航按钮 -->
 	<nav id="bottom_nav" class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
 			<a href="index.html" class="col-xs-3" style="color:red;" ><img id="nav_01" width="18" src="images/h_nav_01.png" alt=""><br><span>首页</span></a> 
@@ -211,6 +185,7 @@
 		    <script src="js/base_funtion.js"></script>
 	</nav>
 
- </div>
+
+	</div>
 </body>
 </html>

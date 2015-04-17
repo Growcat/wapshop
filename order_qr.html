@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 网页的宽度自动适应手机屏幕的宽度  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/wap_base.css">
+	<title>确认订单</title>
+</head>
+<body onload="init('province','city')">
+	<div class="container">
+		<form action="#">
+		<!-- 配送地点 -->
+		 <div class="row">
+		 	 
+
+			<!-- 地址-->
+				 <table class="table margin-0">
+				 	<!-- address1 -->				 	
+				 	<tr>
+				 		<td class="col-xs-11" style="padding-right:0;">
+				 			<input id="place1" type="radio" name="toplace">  
+				 			<label for="place1">
+				 			<div>广东省广州市多个文字另起一行多个文字另起一行</div>
+				 			<div><span class="col-xs-4 pad_lf_0">刘二二二</span>13066882255</div></label>
+				 		</td>
+
+				 		<td class="col-xs-1">
+				 			
+				 			<a href="#"> <img src="images/del.png" width="32" alt="" > </a>
+				 		</td>
+
+				 	</tr>
+				 	 
+
+				 	<!-- add new address -->
+				 	<tr>
+				 		<td class="col-xs-11" style="padding-right:0;">
+				 			<input id="place2" type="radio" name="toplace">  
+				 			<label for="place2">
+				 			<div>新增收货地址</div>
+				 			 </label>
+				 		</td>
+
+				 		<td class="col-xs-1">
+				 		</td>
+				 	</tr>
+
+				 	<tr><td colspan="3">
+				 		<!-- 收货详细信息 -->
+							<form action="#">
+								 <table class="table addressinfo margin-0">
+								 	<tr><td style="padding-right:0">收货人姓名:</td><td><input class="form-control" type="text"></td></tr>
+								 	<tr><td style="padding-right:0">收货人电话:</td><td><input class="form-control" type="number"></td></tr>
+								 	<tr><td style="padding-right:0">收货人省份:</td><td><select class="form-control" name="province" id="province" onchange="select('province','city')"></select></td></tr>
+								 	<tr><td style="padding-right:0">收货人城市:</td><td><select class="form-control" name="city" id="city" onchange="select('province','city')"></select></td></tr>
+								 	<tr><td style="padding-right:0">收货人乡镇:</td><td><input  class="form-control"type="text"></td></tr>
+								 	 
+								 			
+								 		 
+								 </table>
+								 <br> 
+								
+											<button class="col-xs-12   btn btn-success" type="submit">保存收货地址</button>
+
+						        <!-- js for省份和城市列表 -->
+								<script   language="javascript" src="js/adress.js"></script>
+							</form>
+				 	</td></tr>
+	 
+				 </table>
+
+	 		 
+			</p>
+			 
+
+			<script  src="js/radioChange.js"> </script>
+
+		</div>
+
+		<!-- 配送方式 -->
+		<p>
+		<div class="row">
+			<a href="#">
+			 <table class="table margin-0">
+			 	<tr>
+			 	<td  class="col-xs-4 h4" style="padding-right:0;">配送方式</td>
+				<td  class="col-xs-7">&nbsp;</td>
+				<td  class="col-xs-1"><img src="images/go_next2.png" width="32" alt="" ></td>
+			 	</tr>
+			 </table>
+			 </a>
+			 <table class="table margin-0">
+				<!-- <tr>
+					<td class="h4" colspan="2">请选择配送方式</td>
+				</tr> -->
+				<tr>
+					<td><input id="wuliu1" type="radio" name="peisong">  
+						<label for="wuliu1">物流&nbsp;&nbsp;<font color="red">（到付）</font></label>
+					</td>
+				</tr>
+				<tr>
+					<td><input id="wuliu2" type="radio" name="peisong">  
+						<label for="wuliu2">韵达快递&nbsp;&nbsp;<font color="red">10元</font></label>
+					</td>
+				</tr>
+				 <tr>
+					<td><input id="wuliu3" type="radio" name="peisong">  
+						<label for="wuliu3">圆通快递&nbsp;&nbsp;<font color="red">8元</font></label>
+					</td>
+				</tr>
+				 
+			</table>
+
+		</div>
+		</p>
+		<!-- 购物清单 -->
+		<p>
+			<div class="row">
+				<table class="table margin-0">
+				<!-- 购物清单标题-->
+			 	<tr>
+			 	<td  class="col-xs-4 h4" style="padding-right:0;"> 购物清单  </td>
+			 	</tr>
+			 </table>
+				<div class="row">
+					<table class="table" style="border-top:0;margin-bottom:0;">
+
+						<!-- 商品2 -->
+
+						<tr>
+							<td class="col-xs-2"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
+							<td class="col-xs-7"><div>商品名称标题文字要限制多个文字自动换行</div><div>单价:288.3元</div></td>
+							<td class="col-xs-3" style="padding-left:0;padding-right:0;"><div>数量:1000</div><div>小计:(元)<br><font color="red"> 318888</font></div></td>
+						</tr>
+						<!-- 商品2end -->
+
+						<!-- 商品2 -->
+
+						<tr>
+							<td class="col-xs-2"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
+							<td class="col-xs-7"><div>商品名称标题文字要限制多个文字自动换行</div><div>单价:288.3元</div></td>
+							<td class="col-xs-3" style="padding-left:0;padding-right:0;"><div>数量:1000</div><div>小计:(元)<br><font color="red">812212</font></div></td>
+						</tr>
+						<!-- 商品2end -->
+
+						<!-- 商品2 -->
+
+						<tr>
+							<td class="col-xs-2"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
+							<td class="col-xs-7"><div>商品名称标题文字要限制多个文字自动换行</div><div>单价:288.3元</div></td>
+							<td class="col-xs-3" style="padding-left:0;padding-right:0;"><div>数量:1000</div><div>小计:(元)<br><font color="red">812</font></div></td>
+						</tr>
+						<!-- 商品2end -->
+
+
+
+					</table>
+				</div>
+ 					 
+  
+					 
+					 
+  
+
+		 
+
+
+
+				</div>
+				 
+		</p>
+		
+		<!-- 订单备注 -->
+		<p>
+		<div class="row">
+			<a href="#">
+			 <table class="table margin-0">
+			 	<tr>
+			 	<td  class="col-xs-4 h4" style="padding-right:0;"> 订单备注  </td>
+				<td  class="col-xs-8"><input type="text" id="orderBeizhu" class="form-control  input-sm" style="margin-top:4px;"></td>
+
+			 	</tr>
+			 </table>
+			 </a>
+		</div>
+		</p>
+
+
+
+
+ 
+		<!-- 结算 -->
+		<nav  class="navbar navbar-default  navbar-fixed-bottom" role="navigation" style="padding-top:8px;">
+		 <span class="col-xs-8 js_heji" >合计：<font><b>￥88000000.00</b></font></span>
+		 <span class="col-xs-4"><button type="submit" class="btn btn-success to-right">确认订单</button></span>
+		</nav>
+
+	</form>
+ 
+
+
+
+	</div>
+
+</body>
+</html>

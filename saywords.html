@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 网页的宽度自动适应手机屏幕的宽度  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/wap_base.css">
+	<title>留言反馈</title>
+</head>
+<body>
+<div class="container">
+	<form action="#" id="tousujy">
+	<p>
+		<div class="row">
+			
+		<table class="table table-condensed margin-0">
+			<tr>
+				<td colspan="4" class="h4 gutter">选择类型:</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="sw_01" type="radio" name="how_back">		
+					<label for="sw_01">咨询</label>
+				</td>
+
+				<td>
+					<input id="sw_02" type="radio" name="how_back">		
+					<label for="sw_02">物流配送</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="sw_03" type="radio" name="how_back">		
+					<label for="sw_03">售后服务</label>
+				</td>
+				<td>
+					<input id="sw_04" type="radio" name="how_back">		
+					<label for="sw_03">投诉建议</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="sw_05" type="radio" name="how_back">		
+					<label for="sw_03">活动咨询</label>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</p>
+
+		<p>
+			<div class="row">
+				<table class="table margin-0">
+					<tr><td class="h4">留言标题</td></tr>
+					<tr><td class="gutter"><input type="text" class="form-control"></td></tr>
+					<tr><td class="h4">留言内容</td></tr>
+					<tr><td><textarea name="why_back" id="wb" cols="30" rows="4" class="form-control"></textarea></td></tr>
+				</table>
+			</div>
+		</p>
+
+		<button class="col-xs-4 col-xs-offset-1 btn btn-warning" type="reset">重置</button>
+		<button class="col-xs-4 col-xs-offset-2 btn btn-success" type="submit">提交留言</button>
+	</form>
+</div>
+
+
+ <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script  src="js/radioChange.js"> </script>	
+</body>
+</html>

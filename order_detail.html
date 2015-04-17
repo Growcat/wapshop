@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 网页的宽度自动适应手机屏幕的宽度  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/wap_base.css">
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body  >
+	<div class="container">
+			<table class="table margin-0" id="order_msg">
+				<tr><td colspan="2"><b>您的订单已经生成！</b></td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">订单状态:</td><td class="text-primary">待支付</td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">订单编号:</td><td>8023562650001235</td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">下单时间:</td><td>2015-04-13 14:44:39</td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">订单金额:</td><td><b><font color="red">￥1560</font></b></td></tr>
+			</table>
+			<p><div class="row" style="background:transparent">
+				<button class="col-xs-4 col-xs-offset-1  btn btn-danger">立即支付</button>
+				<button class="col-xs-4 col-xs-offset-2 btn btn-primary">取消订单</button>
+	 		</div>
+	 		</p>
+	 		<div class="row">
+			<table class="table margin-0" id="shouhuo_msg">
+				<tr><td class="col-xs-3 text-right" style="padding:0">收货人姓名:</td><td>张三</td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">收货人地址:</td><td>多个文字占用自动换行多个文字占用自动换行多个文字行</td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">快递/物流:</td><td>&nbsp;</td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">物流单号:</td><td>&nbsp;</td></tr>
+				<tr><td class="col-xs-3 text-right" style="padding:0">订单备注:</td><td>&nbsp;</td></tr>
+			</table>
+	 		</div>
+		<!-- 购物清单 -->
+		<p>
+			<div class="row">
+				<table class="table margin-0">
+				<!-- 购物清单标题-->
+			 	<tr>
+			 	<td  class="col-xs-4 " style="padding-right:0;"> <b>商品信息</b> </td>
+			 	</tr>
+			 </table>
+				<div class="row">
+					<table class="table" style="border-top:0;margin-bottom:0;">
+
+						<!-- 商品2 -->
+
+						<tr>
+							<td class="col-xs-2"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
+							<td class="col-xs-7"><div>商品名称标题文字要限制多个文字自动换行</div><div>数量:10</div></td>
+							<td class="col-xs-3" style="padding-left:0;padding-right:0;"> <div>小计:(元)<br><font color="red"> 318888</font></div></td>
+						</tr>
+						<!-- 商品2end -->
+ 						<!-- 商品2 -->
+
+						<tr>
+							<td class="col-xs-2"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
+							<td class="col-xs-7"><div>商品名称标题文字要限制多个文字自动换行</div><div>数量:10</div></td>
+							<td class="col-xs-3" style="padding-left:0;padding-right:0;"> <div>小计:(元)<br><font color="red"> 318888</font></div></td>
+						</tr>
+						<!-- 商品2end -->
+  					</table>
+				</div>
+				</div>
+				 
+		</p>
+
+	<!-- 底部导航 -->
+	<!-- 导航按钮 -->
+	<nav id="bottom_nav" class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
+			<a href="index.html" class="col-xs-3" style="color:red;" ><img id="nav_01" width="18" src="images/h_nav_01.png" alt=""><br><span>首页</span></a> 
+			<a href="sort.html" class="col-xs-3" ><img id="nav_02" width="18" src="images/nav_02.png" alt=""><br><span>分类</span></a>
+			<a href="cart.html" class="col-xs-3" id="to_Cart" ><img id="nav_03" width="18" src="images/nav_03.png" alt=""><br><span>购物车</span><div class="c_badge">1</div></a>
+			<a href="numcenter.html" class="col-xs-3" ><img id="nav_04" width="18" src="images/nav_04.png" alt=""><br><span>会员中心</span></a>	 
+		   <!-- this js for bottom_nav changes ,can't move its place. -->
+		    <script src="js/base_funtion.js"></script>
+	</nav>
+
+	</div>
+</body>
+</html>
