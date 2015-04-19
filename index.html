@@ -19,18 +19,16 @@
 
 <!-- 顶部栏/ 分类&搜索 -->
 <div class="row">
-
-	<nav id="top_nav" class="navbar navbar-default  navbar-fixed-top" role="navigation">
+ 	<nav id="top_nav" class="navbar navbar-default  navbar-fixed-top" role="navigation">
 		<a href="#" class="col-xs-2"><img  src="images/fenlei.png" alt="" height="24"><br>分类</a>
 
-		 <form  role="form" class="form-group" action="index.html" >
-				<label class="sr-only" for="InputSearch">search</label>
-				<div class="col-xs-8">
-					<input type="text" class="form-control" id="InputSearch" placeholder="输入搜索关键字">
-				</div>
-				<div class="col-xs-2">
-					<button   type="submit" class="btn btn-primary ">搜索</button>
-				</div>
+		 <form  role="form" class="form-group col-xs-10 pad_rt_0" action="index.html" >
+				<div class="input-group">
+					  <input type="text"  class="form-control" id="InputSearch" >
+					  <span class="input-group-btn" >
+					    <button type="submit" class="btn btn-primary">搜索</button>
+					  </span>
+					</div>
 			</form>
 
 	</nav>
