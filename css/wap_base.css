@@ -95,7 +95,7 @@ a:hover{text-decoration:none;}
 button{vertical-align:middle;}
 
 /*******************购物车**********************/
-.c_tt{height:30px;}
+.c_tt{height:22px;overflow: hidden;}
 .c_infos{height:66px;margin-top:2px;}
 .infos_xj{width:100%;height:20px;float:left;}
 .infos_xj span{font-size:18px;color:red;}
