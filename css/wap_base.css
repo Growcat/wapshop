@@ -1,7 +1,7 @@
 *{padding:0;margin:0 auto;outline:none;}
 img{vertical-align:middle;}
 input{-webkit-box-shadow:none;box-shadow:none;border-top:0}
-body{padding-bottom:50px;background:#f2f2f2;}
+body{padding-bottom:50px;background:#f8f8f8;}
 textarea{resize:none;}
 .row{background:#fff;}
 a{color:#333;}
@@ -27,11 +27,10 @@ a:hover{color:#555;}
 #bottom_nav span{line-height:2.0;}
 
 /*首页update 20150409*/
-[class*="icos"]{display:inline-block;width:26px;height:24px;background:url(../images/ico.png) no-repeat;background-size:24px 96px;}
+[class*="icos"]{display:inline-block;width:32px;height:32px;background:url(../images/ico.png) no-repeat;background-size:32px;}
 .icos1{background-position:center 0;}
-.icos2{background-position:center -24px;}
-.icos3{background-position:center -48px;}
-.icos4{background-position:center -72px;}
+.icos2{background-position:center -32px;}
+.icos3{background-position:center -64px;}
 .a-defa{color:#333;}
 
 /*add on 20150113*/
@@ -65,7 +64,7 @@ i.bt_sy{background-position:0px -288px;}
 
 /*****************************************会员中心******************************************/
 .headpics{border-radius:50%;margin-top:2px;height:68px;width:68px;}
-.itemslist{height: 50px;line-height:50px;border-top:1px solid #eee;}
+.itemslist{height: 50px;line-height:50px;border-top:1px solid #efefef;}
 .itemslist a{color:#333;}
 .col-allx-8{width:70%;float:left;padding-left:15px;}
 .col-allx-3{width:20%;float:left;}
@@ -95,12 +94,12 @@ a:hover{text-decoration:none;}
 button{vertical-align:middle;}
 
 /*******************购物车**********************/
-.c_tt{height:22px;overflow: hidden;}
+.c_tt{height:22px;overflow: hidden;}   
 .c_infos{height:66px;margin-top:2px;}
-.infos_xj{width:100%;height:20px;float:left;}
+.infos_xj{width:100%;min-height:20px;float:left;}
 .infos_xj span{font-size:18px;color:red;}
 .infos_other{width:50%;height:46px;float:left;margin-top:4px;}
-.infos_num{width:50%;height:46px;text-align:center;padding-top:14px;float:left;}
+.infos_num{width:49%;height:46px;text-align:right;padding-top:14px;float:left;}
 .js_heji font{font-size:18px;color:#f40;}
 
 /*********************加盟店分布图页面************/
@@ -173,3 +172,19 @@ label.checked{color:#333;background:url("../images/yes.png") no-repeat center le
 /***************************投诉建议******************************/
 #tousujy{padding: 0 5px;}
 #tousujy .row{border: 1px solid #ddd;border-radius: 10px;}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th{padding-left: 2px;padding-right: 2px;}
+
+/*---------------------------预售商品------------------------------------------*/
+@media(max-width: 640px){ 
+	#yssp .row{margin:0;padding:0;text-align:left;}
+	#yssp .row .col-margin{margin: 6px;}
+}
+@media (min-width:640px) and (max-width:1400px) { 
+	#yssp .row{margin:0;padding-left:4px;text-align:left;}
+	#yssp .row .col-margin{margin:1px;}
+}
