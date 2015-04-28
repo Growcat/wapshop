@@ -31,7 +31,7 @@ function Swipe(container, options) {
   var slides, slidePos, width;
   options = options || {};
   var index = parseInt(options.startSlide, 10) || 0;
-  var speed = options.speed || 300;
+  var speed = options.speed || 800;
   options.continuous = options.continuous ? options.continuous : true;
 
   function setup() {

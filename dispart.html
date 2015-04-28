@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 网页的宽度自动适应手机屏幕的宽度  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/wap_base.css">
+	<title>全部分类</title>
+	<style type="text/css">
+		.disnav{background: url(images/disnavbg.png) no-repeat;background-size: 48px 192px;width: 48px; height: 48px;}
+		.wr_jp{background-position: 0 0}
+		.wr_dz{background-position: 0 -48px;}
+		.wr_gj{background-position: 0 -96px;}
+		.wr_yg{background-position: 0 -144px;}
+		.part-divlf{width:100px;height:130px;border:1px solid #efefef; border-radius:6px;position:relative;margin:4px;}
+		.part-divlf-tt{width:100%;height:30px;line-height:30px;position: absolute;bottom:0; color:#fff;text-align:center;}
+		.newcssbtn{margin-bottom:6px;margin-top:6px;margin-left:4px;border-radius:20px;}
+		
+		/*绿色-分类*/
+		.part-green-img{background:url(images/240.jpg) no-repeat top center;background-size:100px 100px;}
+		.part-green{background-color:#7fc369;}
+		.btn-green {
+		  color: #7fc369;
+		  background-color: #fff;
+		  border-color: #7fc369;
+		}
+		.btn-green:hover,
+		.btn-green:focus,
+		.btn-green.focus,
+		.btn-green:active,
+		.btn-green.active,
+		.open > .dropdown-toggle.btn-green {
+		  color: #fff;
+		  background-color: #7fc369;
+		  border-color: #7fc369;
+		}
+		.btn-green:active,
+		.btn-green.active,
+		.open > .dropdown-toggle.btn-green {
+		  background-image: none;
+		}
+			
+		/*粉色-分类*/
+		.part-pink-img{background:url(images/2401.jpg) no-repeat top center;background-size:100px 100px;}
+		.part-pink{background-color:#f19fc2;}
+		.btn-pink {
+		  color: #f19fc2;
+		  background-color: #fff;
+		  border-color: #f19fc2;
+		}
+		.btn-pink:hover,
+		.btn-pink:focus,
+		.btn-pink.focus,
+		.btn-pink:active,
+		.btn-pink.active,
+		.open > .dropdown-toggle.btn-pink {
+		  color: #fff;
+		  background-color: #f19fc2;
+		  border-color: #f19fc2;
+		}
+		.btn-pink:active,
+		.btn-pink.active,
+		.open > .dropdown-toggle.btn-pink {
+		  background-image: none;
+		}
+
+		/*蓝色-分类*/
+		.part-blue-img{background:url(images/2403.jpg) no-repeat top center;background-size:100px 100px;}
+		.part-blue{background-color:#87bdfe;}
+		.btn-blue {
+		  color: #87bdfe;
+		  background-color: #fff;
+		  border-color: #87bdfe;
+		}
+		.btn-blue:hover,
+		.btn-blue:focus,
+		.btn-blue.focus,
+		.btn-blue:active,
+		.btn-blue.active,
+		.open > .dropdown-toggle.btn-blue {
+		  color: #fff;
+		  background-color: #87bdfe;
+		  border-color: #87bdfe;
+		}
+		.btn-blue:active,
+		.btn-blue.active,
+		.open > .dropdown-toggle.btn-blue {
+		  background-image: none;
+		}
+
+		/*橘色-分类*/
+		.part-orange-img{background:url(images/2403.jpg) no-repeat top center;background-size:100px 100px;}
+		.part-orange{background-color:#fe7941;}
+		.btn-orange {
+		  color: #fe7941;
+		  background-color: #fff;
+		  border-color: #fe7941;
+		}
+		.btn-orange:hover,
+		.btn-orange:focus,
+		.btn-orange.focus,
+		.btn-orange:active,
+		.btn-orange.active,
+		.open > .dropdown-toggle.btn-orange {
+		  color: #fff;
+		  background-color: #fe7941;
+		  border-color: #fe7941;
+		}
+		.btn-orange:active,
+		.btn-orange.active,
+		.open > .dropdown-toggle.btn-orange {
+		  background-image: none;
+		}
+
+		/*橘色-分类*/
+		.part-orange-img{background:url(images/2404.jpg) no-repeat top center;background-size:100px 100px;}
+		.part-orange{background-color:#fe7941;}
+		.btn-orange {
+		  color: #fe7941;
+		  background-color: #fff;
+		  border-color: #fe7941;
+		}
+		.btn-orange:hover,
+		.btn-orange:focus,
+		.btn-orange.focus,
+		.btn-orange:active,
+		.btn-orange.active,
+		.open > .dropdown-toggle.btn-orange {
+		  color: #fff;
+		  background-color: #fe7941;
+		  border-color: #fe7941;
+		}
+		.btn-orange:active,
+		.btn-orange.active,
+		.open > .dropdown-toggle.btn-orange {
+		  background-image: none;
+		}
+
+
+		/*紫色-分类*/
+		.part-purple-img{background:url(images/2405.jpg) no-repeat top center;background-size:100px 100px;}
+		.part-purple{background-color:#d070ff;}
+		.btn-purple {
+		  color: #d070ff;
+		  background-color: #fff;
+		  border-color: #d070ff;
+		}
+		.btn-purple:hover,
+		.btn-purple:focus,
+		.btn-purple.focus,
+		.btn-purple:active,
+		.btn-purple.active,
+		.open > .dropdown-toggle.btn-purple {
+		  color: #fff;
+		  background-color: #d070ff;
+		  border-color: #d070ff;
+		}
+		.btn-purple:active,
+		.btn-purple.active,
+		.open > .dropdown-toggle.btn-purple {
+		  background-image: none;
+		}
+
+	</style>
+</head>
+<body style="background:#fff;">
+	<div class="container">
+	<p>
+	<div class="row"  >
+	<div class="col-xs-12">
+	<div class="row"style="border:1px solid #d5d5d5; border-radius:10px;">
+		 <table class="table margin-0">
+		 	<tr>
+		 		<td class="text-center"><a href="#"><div class="disnav wr_jp"></div>精品商城</a></td>
+		 		<td class="text-center"><a href="#"><div class="disnav wr_dz"></div>大众商城</a></td>
+		 		<td class="text-center"><a href="#"><div class="disnav wr_gj"></div>工具产品</a></td>
+		 		<td class="text-center"><a href="#"><div class="disnav wr_yg"></div>粤购专区</a></td>
+		 	</tr>
+		 </table></div></div>
+	</div>
+	</p>
+	<h4>所有分类</h4>
+		<div class="row">
+
+			 <div class="col-xs-12">
+			 	<p><!-- 营养保健 -->
+			 	<div class="row" style="border:1px solid #d5d5d5; border-radius:10px;">
+			 		<table class="col-xs-12">
+					 	<tr>
+					 		<td>
+								<div class="part-divlf part-green-img part-green">
+									<div class="part-divlf-tt">营养保健</div>
+								</div>
+					 		</td>
+					 		<td style="text-align:left;">
+					 			<button class="btn btn-green newcssbtn">皮肤保健</button>
+					 			<button class="btn btn-green newcssbtn">强精益肾</button>
+					 			<button class="btn btn-green newcssbtn">&nbsp;&nbsp;降血糖&nbsp;&nbsp;</button>
+					 			<button class="btn btn-green newcssbtn">&nbsp;排风湿&nbsp;</button>
+					 			<button class="btn btn-green newcssbtn">祛痛消炎</button>
+					 			<button class="btn btn-green newcssbtn">足部保健</button>
+					 			<button class="btn btn-green newcssbtn">祛&nbsp;&nbsp;&nbsp;&nbsp;痘</button>
+					 		</td>
+					 	</tr>
+					 </table>		
+			 	</div>
+			 	</p>
+			 </div>
+
+
+			 <div class="col-xs-12">
+			 	<p><!-- 个护化妆 -->
+			 	<div class="row" style="border:1px solid #d5d5d5; border-radius:10px;">
+			 		<table class="col-xs-12">
+					 	<tr>
+					 		<td>
+								<div class="part-divlf part-pink-img part-pink">
+									<div class="part-divlf-tt">个护化妆</div>
+								</div>
+					 		</td>
+					 		<td style="text-align:left;">
+					 			<button class="btn btn-pink newcssbtn">美体洗护</button>
+					 			<button class="btn btn-pink newcssbtn">美发护发</button>
+					 			<button class="btn btn-pink newcssbtn">脸部护理</button>
+					 			<button class="btn btn-pink newcssbtn">口腔护理</button>
+					 			<button class="btn btn-pink newcssbtn">彩妆用品</button>
+					 			<button class="btn btn-pink newcssbtn">美护套装</button>
+					 		</td>
+					 	</tr>
+					 </table>		
+			 	</div>
+			 	</p>
+			 </div>
+
+			 <div class="col-xs-12">
+			 	<p><!-- 百货食品 -->
+			 	<div class="row" style="border:1px solid #d5d5d5; border-radius:10px;">
+			 		<table class="col-xs-12">
+					 	<tr>
+					 		<td>
+								<div class="part-divlf part-blue-img part-blue">
+									<div class="part-divlf-tt">百货食品</div>
+								</div>
+					 		</td>
+					 		<td style="text-align:left;">
+					 			<button class="btn btn-blue newcssbtn">膳食保健</button>
+					 			<button class="btn btn-blue newcssbtn">传统滋补</button>
+					 			<button class="btn btn-blue newcssbtn">饮料酒水</button>
+					 			<button class="btn btn-blue newcssbtn">口腔护理</button>
+					 			<button class="btn btn-blue newcssbtn">零食/冲饮</button>
+					 			<button class="btn btn-blue newcssbtn">调&nbsp;&nbsp;&nbsp;&nbsp;味</button>
+					 		</td>
+					 	</tr>
+					 </table>		
+			 	</div>
+			 	</p>
+			 </div>
+
+			 <div class="col-xs-12">
+			 	<p><!-- 生活日用 -->
+			 	<div class="row" style="border:1px solid #d5d5d5; border-radius:10px;">
+			 		<table class="col-xs-12">
+					 	<tr>
+					 		<td>
+								<div class="part-divlf part-orange-img part-orange">
+									<div class="part-divlf-tt">生活日用</div>
+								</div>
+					 		</td>
+					 		<td style="text-align:left;">
+					 			<button class="btn btn-orange newcssbtn">洗护清洁</button>
+					 			<button class="btn btn-orange newcssbtn">厨&nbsp;&nbsp;&nbsp;&nbsp;具</button>
+					 			<button class="btn btn-orange newcssbtn">生活家电</button>
+					 			<button class="btn btn-orange newcssbtn">床上用品</button>
+					 			<button class="btn btn-orange newcssbtn">消防用品</button>
+					 			<button class="btn btn-orange newcssbtn">母婴用品</button>
+					 		</td>
+					 	</tr>
+					 </table>		
+			 	</div>
+			 	</p>
+			 </div>
+
+			 <div class="col-xs-12">
+			 	<p><!-- 服饰鞋包 -->
+			 	<div class="row" style="border:1px solid #d5d5d5; border-radius:10px;">
+			 		<table class="col-xs-12">
+					 	<tr>
+					 		<td>
+								<div class="part-divlf part-purple-img part-purple">
+									<div class="part-divlf-tt">服饰鞋包</div>
+								</div>
+					 		</td>
+					 		<td style="text-align:left;">
+					 			<button class="btn btn-purple newcssbtn">内衣/袜子</button>
+					 			<button class="btn btn-purple newcssbtn">皮&nbsp;&nbsp;&nbsp;&nbsp;具</button>
+					 			<button class="btn btn-purple newcssbtn">毛&nbsp;&nbsp;&nbsp;&nbsp;巾</button>
+					 			<button class="btn btn-purple newcssbtn">眼&nbsp;&nbsp;&nbsp;&nbsp;镜</button>
+					 		</td>
+					 	</tr>
+					 </table>		
+			 	</div>
+			 	</p>
+			 </div>
+
+
+				
+			
+		</div>
+
+
+<!-- 底部导航 -->
+	<!-- 导航按钮 -->
+	<nav id="bottom_nav" class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
+			<a href="index.html" class="col-xs-3" ><img id="nav_01" width="18" src="images/nav_01.png" alt=""><br><span>首页</span></a> 
+			<a href="dispart.html" class="col-xs-3" ><img id="nav_02" width="18" src="images/nav_02.png" alt=""><br><span>全部商品</span></a>
+			<a href="cart.html" class="col-xs-3" id="to_Cart" ><img id="nav_03" width="18" src="images/nav_03.png" alt=""><br><span>购物车</span><div class="c_badge">1</div></a>
+			<a href="numcenter.html" class="col-xs-3" ><img id="nav_04" width="18" src="images/nav_04.png" alt=""><br><span>会员中心</span></a>	 
+		   <!-- this js for bottom_nav changes ,can't move its place. -->
+		    <script src="js/base_funtion.js"></script>
+	</nav>		
+	</div>
+</body>
+</html>

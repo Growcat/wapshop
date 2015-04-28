@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 网页的宽度自动适应手机屏幕的宽度  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/wap_base.css">
+	<title>选择配送方式</title>
+</head>
+<body>
+	<div class="container">
+		<form action="order_qr.html">
+		<div class="row">
+			<table class="table margin-0">
+				<tr>
+					<td class="h4" colspan="2">请选择配送方式</td>
+				</tr>
+				<tr>
+					<td><input id="wuliu1" type="radio" name="toplace">  
+						<label for="wuliu1">物流&nbsp;&nbsp;<font color="red">（到付）</font></label>
+					</td>
+				</tr>
+				<tr>
+					<td><input id="wuliu1" type="radio" name="toplace">  
+						<label for="wuliu1">韵达快递&nbsp;&nbsp;<font color="red">10元</font></label>
+					</td>
+				</tr>
+				 <tr>
+					<td><input id="wuliu1" type="radio" name="toplace">  
+						<label for="wuliu1">圆通快递&nbsp;&nbsp;<font color="red">8元</font></label>
+					</td>
+				</tr>
+				 
+			</table>
+		</div><br><br>
+		<button class="col-xs-8 col-xs-offset-2 btn btn-success">确认配送方式</button>
+
+
+		<script  src="js/radioChange.js"> </script>
+		</form>
+	</div>
+
+</body>
+</html>

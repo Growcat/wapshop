@@ -20,17 +20,21 @@
 <!-- 顶部栏/ 分类&搜索 -->
 <div class="row">
  	<nav id="top_nav" class="navbar navbar-default  navbar-fixed-top" role="navigation">
-		<a href="#" class="col-xs-2"><img  src="images/fenlei.png" alt="" height="24"><br>分类</a>
-
-		 <form  role="form" class="form-group col-xs-10 pad_rt_0" action="index.html" >
-				<div class="input-group">
-					  <input type="text"  class="form-control" id="InputSearch" >
+		<table class="table margin-0">
+			<tr>
+				<td style="width:42px; text-align:center;padding-top:2px;">
+					<a href="dispart.html"><img  src="images/fenlei.png" alt="" width="18"><br>分类</a>
+				</td>
+				<td style="padding-top:2px;">
+					<div class="input-group">
+				 	  <input type="text"  class="form-control" id="InputSearch" >
 					  <span class="input-group-btn" >
-					    <button type="submit" class="btn btn-primary">搜索</button>
+					    <button type="submit" class="btn btn-success">搜索</button>
 					  </span>
-					</div>
-			</form>
-
+				</div> 
+				</td>
+			</tr>
+		</table>
 	</nav>
 
 </div>
@@ -45,12 +49,13 @@
 	 		<div class="swipe-wrap">
 	 			<div>
 	 				<a href="javascript:;">
-	 					<img class="img-responsive" src="images/1.jpg"/>	 
+	 				<!-- 此图图片规格最好是1024*500 -->
+	 					<img class="img-responsive" src="images/1.jpg" />	 
 	 				</a>
 	 			</div>
 	 			<div>
 	 				<a href="javascript:;">
-	 					<img class="img-responsive" src="images/2.jpg"/>	 
+	 					<img class="img-responsive" src="images/2.jpg" />	 
 	 				</a>
 	 			</div>
 	 			<div>
@@ -71,7 +76,7 @@
 	 <script type="text/javascript">
 	    var bullets = document.getElementById('position').getElementsByTagName('li');
 	    var banner = Swipe(document.getElementById('mySwipe'), {
-	    	auto: 2000,
+	    	auto: 4000,
 	    	continuous: true,
 	    	disableScroll:false,
 	    	callback: function(pos) {
@@ -88,18 +93,16 @@
 <!-- 四小图标 -->
 <div class="container-fluid">
 	<div class="row"  >
-		<table class="table table-bordered text-center margin-0">
+		<table class="table text-center margin-0" style="margin-bottom:-1px;">
 		<tr><td colspan="4" style="background:url(images/t_bg.png) repeat-x center;background-size:12px;padding-bottom:0;"></td></tr>
-		<tr style="border-top:0;">
-
-			<td ><a href="#"><span class="icos1"></span><br>最新商品</a></td>
-			<td ><a href="#"><span class="icos2"></span><br>最新商品</a></td>
-			<td ><a href="#"><span class="icos3"></span><br>最新商品</a></td>
-			<td ><a href="#"><span class="icos4"></span><br>最新商品</a></td>
+		<tr>
+			<td ><a href="#"><span class="icos1"></span><br>预售商品</a></td>
+			<td ><a href="#"><span class="icos2"></span><br>我的订单</a></td>
+			<td ><a href="#"><span class="icos3"></span><br>近期活动</a></td>
 			</tr>
 		</table>
 	</div>
-	 
+ 
 </div>
 
 <div class="container">
@@ -108,7 +111,7 @@
 	<div class="row">
 		<table class="table margin-0">
 			<tr>
-				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></td>
+				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="120" height="120"  alt=""></td>
 				<td>
 					<div class="h_100" >
 							<div class="c_tt">依漫婷 沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml</div>
@@ -116,7 +119,8 @@
 							<div class="c_infos">
 								<!-- 价格 -->
 								<div class="infos_xj">
-									<span >￥88.00</span><br>
+									<font color="red">会员价:</font><span>￥88.00</span><br>
+									<s>市场价:￥188.00</s>
 								</div>
 								<!-- 信息 -->
 								<div class="infos_other">
@@ -133,41 +137,11 @@
 			</tr>
 		</table>
 	</div>
-
-	<!-- subpros update -->
+  	<!-- subpros update -->
 	<div class="row">
 		<table class="table margin-0">
 			<tr>
-				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></td>
-				<td>
-					<div class="h_100" >
-						<div class="c_tt">依漫婷 沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml</div>
-
-							<div class="c_infos">
-								<!-- 价格 -->
-								<div class="infos_xj">
-									<span >￥88.00</span><br>
-								</div>
-								<!-- 信息 -->
-								<div class="infos_other">
-									<span>积分:0.8</span><br>
-									<span>重量:0.8kg</span>
-								</div>
-								<!-- 加入购物车 -->
-								<div class="infos_num">
-									<button type="button" class="btn btn-success btn-sm">加入购物车</button>
-								</div>
-							</div>
-						</div>
-				</td>
-			</tr>
-		</table>
-	</div>
-	<!-- subpros update -->
-	<div class="row">
-		<table class="table margin-0">
-			<tr>
-				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></td>
+				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="120" height="120"  alt=""></td>
 				<td>
 					<div class="h_100" >
 							<div class="c_tt">依漫婷 沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml</div>
@@ -175,7 +149,8 @@
 							<div class="c_infos">
 								<!-- 价格 -->
 								<div class="infos_xj">
-									<span >￥88.00</span><br>
+									<font color="red">会员价:</font><span>￥88.00</span><br>
+									<s>市场价:￥188.00</s>
 								</div>
 								<!-- 信息 -->
 								<div class="infos_other">
@@ -192,11 +167,11 @@
 			</tr>
 		</table>
 	</div>
-	<!-- subpros update -->
+  	<!-- subpros update -->
 	<div class="row">
 		<table class="table margin-0">
 			<tr>
-				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="100" height="100"  alt=""></td>
+				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="120" height="120"  alt=""></td>
 				<td>
 					<div class="h_100" >
 							<div class="c_tt">依漫婷 沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml</div>
@@ -204,7 +179,8 @@
 							<div class="c_infos">
 								<!-- 价格 -->
 								<div class="infos_xj">
-									<span >￥88.00</span><br>
+									<font color="red">会员价:</font><span >￥88.00</span><br>
+									<s>市场价:￥188.00</s>
 								</div>
 								<!-- 信息 -->
 								<div class="infos_other">
@@ -221,19 +197,49 @@
 			</tr>
 		</table>
 	</div>
-			 
+  	<!-- subpros update -->
+	<div class="row">
+		<table class="table margin-0">
+			<tr>
+				<td style="width:110px;"><img class="pro_pic" src="images/propic.jpg" width="120" height="120"  alt=""></td>
+				<td>
+					<div class="h_100" >
+							<div class="c_tt">依漫婷 沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml沐浴露300ml</div>
+
+							<div class="c_infos">
+								<!-- 价格 -->
+								<div class="infos_xj">
+									<font color="red">会员价:</font><span >￥88.00</span><br>
+									<s>市场价:￥188.00</s>
+								</div>
+								<!-- 信息 -->
+								<div class="infos_other">
+									<span>积分:0.8</span><br>
+									<span>重量:0.8kg</span>
+								</div>
+								<!-- 加入购物车 -->
+								<div class="infos_num">
+									<button type="button" class="btn btn-success btn-sm">加入购物车</button>
+								</div>
+							</div>
+						</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+  
 
  <div style="height:50px;"></div>
 <!-- 底部导航 -->
 	<!-- 导航按钮 -->
-	<nav id="bottom_nav" class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
-			<a href="index.html" class="col-xs-3" style="color:red;" ><img id="nav_01" width="18" src="images/h_nav_01.png" alt=""><br><span>首页</span></a> 
-			<a href="sort.html" class="col-xs-3" ><img id="nav_02" width="18" src="images/nav_02.png" alt=""><br><span>分类</span></a>
-			<a href="cart.html" class="col-xs-3" id="to_Cart" ><img id="nav_03" width="18" src="images/nav_03.png" alt=""><br><span>购物车</span><div class="c_badge">1</div></a>
-			<a href="numcenter.html" class="col-xs-3" ><img id="nav_04" width="18" src="images/nav_04.png" alt=""><br><span>会员中心</span></a>	 
-		   <!-- this js for bottom_nav changes ,can't move its place. -->
-		    <script src="js/base_funtion.js"></script>
-	</nav>
+<nav id="bottom_nav" class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
+		<a href="index.html" class="col-xs-3" ><img id="nav_01" width="18" src="images/nav_01.png" alt=""><br><span>首页</span></a> 
+		<a href="dispart.html" class="col-xs-3" ><img id="nav_02" width="18" src="images/nav_02.png" alt=""><br><span>全部商品</span></a>
+		<a href="cart.html" class="col-xs-3" id="to_Cart" ><img id="nav_03" width="18" src="images/nav_03.png" alt=""><br><span>购物车</span><div class="c_badge">1</div></a>
+		<a href="numcenter.html" class="col-xs-3" ><img id="nav_04" width="18" src="images/nav_04.png" alt=""><br><span>会员中心</span></a>	 
+	   <!-- this js for bottom_nav changes ,can't move its place. -->
+	    <script src="js/base_funtion.js"></script>
+</nav>
 
  </div>
 </body>

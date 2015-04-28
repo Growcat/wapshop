@@ -54,19 +54,47 @@
 						<!-- 商品2 -->
 
 						<tr>
-							<td class="col-xs-2"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
-							<td class="col-xs-7"><div>商品名称标题文字要限制多个文字自动换行</div><div>数量:10</div></td>
-							<td class="col-xs-3" style="padding-left:0;padding-right:0;"> <div>小计:(元)<br><font color="red"> 318888</font></div></td>
+							<td class="col-xs-1"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
+							<td class="col-xs-6"><div class="c_tt">商品名称标题文字要限制多个文字自动换行</div><div>数量:10</div></td>
+							<td class="col-xs-3" > <div>小计:(元)<br><font color="red"> 318888</font></div></td>
+							<td class="col-xs-2"><span class="toPingjia"><font color="#369">评价</font></span></td>
+						</tr>
+						<tr class="ipt_pj" style="display:none;">
+							<td colspan="4">
+								<input type="radio" name="whatpj" id="good"><label for="good">好评</label>
+								<input type="radio" name="whatpj" id="soso"><label for="soso">中评</label>
+								<input type="radio" name="whatpj" id="bad" ><label for="bad">差评</label>
+								<input type="text" class="form-control" placeholder="请在此输入对商品的评价" >
+							</td>
 						</tr>
 						<!-- 商品2end -->
- 						<!-- 商品2 -->
+
+
+						<!-- 商品2 -->
 
 						<tr>
-							<td class="col-xs-2"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
-							<td class="col-xs-7"><div>商品名称标题文字要限制多个文字自动换行</div><div>数量:10</div></td>
-							<td class="col-xs-3" style="padding-left:0;padding-right:0;"> <div>小计:(元)<br><font color="red"> 318888</font></div></td>
+							<td class="col-xs-1"><img src="images/propic.jpg" width="50" height="50" alt=""> </td>
+							<td class="col-xs-6"><div class="c_tt">商品名称标题文字要限制多个文字自动换行</div><div>数量:10</div></td>
+							<td class="col-xs-3"><div>小计:(元)<br><font color="red"> 318888</font></div></td>
+							<td class="col-xs-2"><span class="toPingjia"><font color="#369">评价</font></span></td>
 						</tr>
+						<tr class="ipt_pj" style="display:none;">
+							<td colspan="4">
+								<input type="radio" name="whatpj" id="good2"><label for="good2">好评</label>
+								<input type="radio" name="whatpj" id="soso2"><label for="soso2">中评</label>
+								<input type="radio" name="whatpj" id="bad2" ><label for="bad2">差评</label>
+								<input type="text" class="form-control" placeholder="请在此输入对商品的评价" >
+							</td>
+						</tr>
+
+						<script>
+							// 点击评价文字，显示对应的评价输入框，
+							$(".toPingjia").click(function(event) {
+								$(this).parents('tr').next('tr').first('.ipt_pj').toggle();
+							});
+						</script>
 						<!-- 商品2end -->
+ 						<script type="text/javascript" src="js/radioChange.js"></script>
   					</table>
 				</div>
 				</div>

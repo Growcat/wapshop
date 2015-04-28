@@ -16,10 +16,12 @@ $(document).ready(function() {
         events.move = "mousemove";
         events.end = "mouseup";
 	}	
+	
+
 
 	$('a', '#bottom_nav').bind(events.start, function(event) {
 		// alert(0);
-		event.preventDefault();
+		// event.preventDefault();//此处表示阻止浏览器默认行为
 		$(this).css({background:'#efefef'}).siblings('a').css({background:'#fff'});
 		
 		var imgid = $(this).children('img').attr("id");
@@ -29,42 +31,30 @@ $(document).ready(function() {
 		$(this).siblings().each(function(i) {
 			var imgids = $(this).children('img').attr('id');;
 			srcpic(imgids);
-			// alert($(this).siblings('a').length);
-			// alert(imgids);
+		// alert($(this).siblings('a').length);
+		// alert(imgids);
 		});
 
 	}).bind(events.move, function(event) {
-		event.preventDefault();
+		// event.preventDefault();
 	}).bind(events.end, function(event) {
 		// event.preventDefault();
 	});
 
+	
+
+	 // 个人中心页面 触摸项目的各项目时背景色变化
+ 	$(".itemslist").bind(events.start,  function(event) {
+		$(this).css({background:'#efefef'});
+ 	}).bind(events.move, function(event) {
+		// event.preventDefault();
+	}).bind(events.end, function(event) {
+		// event.preventDefault();
+		$(this).css({background:'#fff'});
+	});
 
 
 
-
-
-
-
-
-
-
-	// 此js代码，用于底部导航的激活状态的视觉效果
-	// $("#bottom_nav a").hover(function() {
-	// 	$(this).css('color', 'red');
-	// 	$(this).siblings().css('color', '#333');
-
-	// 	$(this).siblings().css('background', '#efefef');
-	// 	var imgid = $(this).children().attr("id");
-	// 	descpic(imgid);
-	// 	var simg = $(this).children("img").attr("id");
-	// }, function() {
-	// 	$(this).css('color', '#333');
-	// 	$(this).siblings().css('background', '#fff');
-	// 	var imgid = $(this).children().attr("id");
-	// 	srcpic(imgid);
-
-	// });
 
 	
 	// 商品列表切换
@@ -77,10 +67,6 @@ $(document).ready(function() {
 		$(this).children('a').css('color', '#333');
 	});
 	
-	
-
-
-
 
 
 
